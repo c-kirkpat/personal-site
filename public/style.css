@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  background: #C2D3CD;
 }
 
 a {
@@ -22,35 +23,105 @@ form div {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: 100px;
+  grid-auto-rows: minmax(100px, auto);
+  /* padding: 5em; */
   grid-template-areas:
     "a a a b b b"
-    "f f f g g g"
+    "a a a b b b"
     "c c c c c c"
-    "d d e e e e"
+    "z f g h i z"
     "d d e e e e"
   
+}
+
+/* .header {
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+  font-size: 7em;
+ 
+
+  padding: 50px;
+} */
+
+.firstNameWrapper {
+  display: grid;
+  grid-template-areas: "a" "b";  
+  grid-area: a;
+  grid-gap: 0px;
+  font-size: 7em;
+  font-weight: bold;
+  align-content: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 35px;
+  border-color: #50c9ce;
+  color: #72a1e5;
+  border-right-width: 17.5px;
+  padding: .2em;
+}
+.lastNameWrapper {
+  display: grid;
+  grid-template-areas: "a" "b";  
+  grid-area: b;
+  grid-gap: 0px;
+  font-size: 7em;
+  font-weight: bold;
+  align-content: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 35px;
+  border-left-width: 17.5px;
+  border-color: #50c9ce;
+  color: #9883e5;
+  padding: .2em;
 }
 .header {
   grid-area: a;
   align-self: center;
   justify-self: center;
-  font-size: 7em
-}
-.thing {
-  grid-area: d
-}
-.thing2 {
-  grid-area: e
+  
 }
 .header2 {
+  grid-area: b;
+  align-self: center;
+  justify-self: center;
+  
+}
+
+.banner {
+  grid-area: c;
+  border-bottom-style: solid;
+  border-bottom-width: 35px;
+  text-align: center;
+  color: #3a405a;
+  font-size: 4.5em;
+  font-weight: bold;
+  letter-spacing: 50px;
+}
+.lastName {
+  text-align: justify;
+  text-justify: inter-character;  
+  align-self: center;
+  justify-self: center;
+}
+.lastName2 {
+  
+}
+
+/* .header2 {
   grid-area: f;
   align-self: center;
   justify-self: center;
-  font-size: 7em
-}
-.lastName {
+  font-size: 7em;
+  padding: 2em;
+  border: 35px solid;
+  border-top: none;
+  padding-left: 53px;
+  padding-right: 53px;
+  
+} */
+/* .lastName {
   grid-area: b;
   align-self: center;
   justify-self: center;
@@ -61,4 +132,36 @@ form div {
   align-self: center;
   justify-self: center;
   font-size: 7em;
+} */
+
+/* SHAPE STUFF */
+.diamond-narrow {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom: 70px solid #72A1E5;
+	position: relative;
+  top: -50px;
 }
+.diamond-narrow:after {
+	content: '';
+	position: absolute;
+	left: -50px; top: 70px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top: 70px solid #72A1E5;
+}
+
+/* .diamond1 {
+  grid-area: f
+}
+.diamond2 {
+   grid-area: g
+ }
+.diamond3 {
+  grid-area: h
+}
+.diamond4 {
+  grid-area: i
+} */
