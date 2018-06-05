@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background: #C2D3CD;
+  background: #C7E8F3;
 }
 
 a {
@@ -29,8 +29,7 @@ form div {
     "a a a b b b"
     "a a a b b b"
     "c c c c c c"
-    "z f g h i z"
-    "d d e e e e"
+    "d e e e e f";
   
 }
 
@@ -38,7 +37,7 @@ form div {
   grid-area: a;
   align-self: center;
   justify-self: center;
-  font-size: 7em;
+  font-size: 5em;
  
 
   padding: 50px;
@@ -46,7 +45,7 @@ form div {
 
 .firstNameWrapper {
   display: grid;
-  grid-template-areas: "a" "b";  
+  grid-template-areas: "subA" "subB";  
   grid-area: a;
   grid-gap: 0px;
   font-size: 7em;
@@ -58,11 +57,11 @@ form div {
   border-color: #50c9ce;
   color: #72a1e5;
   border-right-width: 17.5px;
-  padding: .2em;
+  padding: .1em;
 }
 .lastNameWrapper {
   display: grid;
-  grid-template-areas: "a" "b";  
+  grid-template-areas: "subA" "subB";  
   grid-area: b;
   grid-gap: 0px;
   font-size: 7em;
@@ -74,22 +73,23 @@ form div {
   border-left-width: 17.5px;
   border-color: #50c9ce;
   color: #9883e5;
-  padding: .2em;
+  padding: .1em;
 }
 .header {
-  grid-area: a;
+  grid-area: subA;
   align-self: center;
   justify-self: center;
   
 }
 .header2 {
-  grid-area: b;
+  grid-area: subB;
   align-self: center;
   justify-self: center;
   
 }
 
 .banner {
+  padding-top: 50px;
   grid-area: c;
   border-bottom-style: solid;
   border-bottom-width: 35px;
@@ -105,15 +105,13 @@ form div {
   align-self: center;
   justify-self: center;
 }
-.lastName2 {
-  
-}
+
 
 /* .header2 {
   grid-area: f;
   align-self: center;
   justify-self: center;
-  font-size: 7em;
+  font-size: 5em;
   padding: 2em;
   border: 35px solid;
   border-top: none;
@@ -125,43 +123,25 @@ form div {
   grid-area: b;
   align-self: center;
   justify-self: center;
-  font-size: 7em
+  font-size: 5em
 }
 .lastName2 {
   grid-area: g;
   align-self: center;
   justify-self: center;
-  font-size: 7em;
+  font-size: 5em;
 } */
 
 /* SHAPE STUFF */
-.diamond-narrow {
-	width: 0;
-	height: 0;
-	border: 50px solid transparent;
-	border-bottom: 70px solid #72A1E5;
-	position: relative;
-  top: -50px;
-}
-.diamond-narrow:after {
-	content: '';
-	position: absolute;
-	left: -50px; top: 70px;
-	width: 0;
-	height: 0;
-	border: 50px solid transparent;
-	border-top: 70px solid #72A1E5;
-}
 
-/* .diamond1 {
-  grid-area: f
+.diamondWrapper {
+  grid-area: e;
+  display: grid;
+  grid-template-areas: 'a a a';
+  grid-gap: 1em;
+  align-content: center;
+  justify-content: center;
 }
-.diamond2 {
-   grid-area: g
- }
-.diamond3 {
-  grid-area: h
+.diamond {
+  height: 2em;
 }
-.diamond4 {
-  grid-area: i
-} */

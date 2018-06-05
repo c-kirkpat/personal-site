@@ -16,12 +16,12 @@ export const GridTest = () => {
                 <div className='lastName2'>PATRICK</div>
             </div>
             <div className='banner'>DEVELOPER </div>
-            <p className='thing'>Hello this is some lorem ipsum that i manually typed out </p>
-            <p className='thing2'>Hello this is some lorem ipsum that i manually typed out </p>
-            <div className='diamond-narrow diamond1' />
-            <div className='diamond-narrow diamond2' />
-            <div className='diamond-narrow diamond3' />
-            <div className='diamond-narrow diamond4' />
+            <div className='diamondWrapper'>
+                <img className='diamond' src="diamond.png" />
+                <img className='diamond' src="diamond.png" />
+                <img className='diamond' src="diamond.png" />
+            </div>
+
 
         </div>
     )
