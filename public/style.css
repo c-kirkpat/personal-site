@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  background: #C7E8F3;
 }
 
 a {
@@ -22,43 +23,125 @@ form div {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: 100px;
+  grid-auto-rows: minmax(100px, auto);
+  /* padding: 5em; */
   grid-template-areas:
     "a a a b b b"
-    "f f f g g g"
+    "a a a b b b"
     "c c c c c c"
-    "d d e e e e"
-    "d d e e e e"
+    "d e e e e f";
   
 }
-.header {
+
+/* .header {
   grid-area: a;
   align-self: center;
   justify-self: center;
-  font-size: 7em
+  font-size: 5em;
+ 
+
+  padding: 50px;
+} */
+
+.firstNameWrapper {
+  display: grid;
+  grid-template-areas: "subA" "subB";  
+  grid-area: a;
+  grid-gap: 0px;
+  font-size: 7em;
+  font-weight: bold;
+  align-content: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 35px;
+  border-color: #50c9ce;
+  color: #72a1e5;
+  border-right-width: 17.5px;
+  padding: .1em;
 }
-.thing {
-  grid-area: d
+.lastNameWrapper {
+  display: grid;
+  grid-template-areas: "subA" "subB";  
+  grid-area: b;
+  grid-gap: 0px;
+  font-size: 7em;
+  font-weight: bold;
+  align-content: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 35px;
+  border-left-width: 17.5px;
+  border-color: #50c9ce;
+  color: #9883e5;
+  padding: .1em;
 }
-.thing2 {
-  grid-area: e
+.header {
+  grid-area: subA;
+  align-self: center;
+  justify-self: center;
+  
 }
 .header2 {
+  grid-area: subB;
+  align-self: center;
+  justify-self: center;
+  
+}
+
+.banner {
+  padding-top: 50px;
+  grid-area: c;
+  border-bottom-style: solid;
+  border-bottom-width: 35px;
+  text-align: center;
+  color: #3a405a;
+  font-size: 4.5em;
+  font-weight: bold;
+  letter-spacing: 50px;
+}
+.lastName {
+  text-align: justify;
+  text-justify: inter-character;  
+  align-self: center;
+  justify-self: center;
+}
+
+
+/* .header2 {
   grid-area: f;
   align-self: center;
   justify-self: center;
-  font-size: 7em
-}
-.lastName {
+  font-size: 5em;
+  padding: 2em;
+  border: 35px solid;
+  border-top: none;
+  padding-left: 53px;
+  padding-right: 53px;
+  
+} */
+/* .lastName {
   grid-area: b;
   align-self: center;
   justify-self: center;
-  font-size: 7em
+  font-size: 5em
 }
 .lastName2 {
   grid-area: g;
   align-self: center;
   justify-self: center;
-  font-size: 7em;
+  font-size: 5em;
+} */
+
+/* SHAPE STUFF */
+
+.diamondWrapper {
+  grid-area: e;
+  display: grid;
+  grid-template-areas: 'a a a';
+  grid-gap: 1em;
+  align-content: center;
+  justify-content: center;
+}
+.diamond {
+  height: 2em;
 }
