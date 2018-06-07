@@ -17,10 +17,12 @@ export const GridTest = () => {
             </div>
             <div className='banner'>DEVELOPER </div>
             <div className='diamondWrapper'>
-                <img className='diamond' src="diamond.png" />
-                <img className='diamond' src="diamond.png" />
-                <img className='diamond' src="diamond.png" />
+                <img className='diamond' src="diamond2.svg" />
+                <img className='diamond' src="diamond2.svg" />
+                <img className='diamond' src="diamond2.svg" />
             </div>
+            <div className='border-left' />
+            <div className='border-right' />
 
 
         </div>
