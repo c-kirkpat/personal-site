@@ -1,6 +1,7 @@
 body {
   font-family: sans-serif;
   background: rgb(199, 232, 243);
+  border-radius: 15%;
 }
 
 a {
@@ -29,7 +30,12 @@ form div {
     "w a a a b b b x"
     "w a a a b b b x"
     "w c c c c c c x"
-    "w d e e e e f x";
+    "w d e e e e f x"
+    "w n n n n n n x"
+    "w n n n n n n x"
+    "w n n n n n n x"
+    "w n n n n n n x"
+    "w n n n n n n x";
   
 }
 
@@ -142,28 +148,26 @@ form div {
   align-content: center;
   justify-content: center;
   padding-top: 2em;
+  text-align: center;
+  font-weight: bold;
+  color:#3a405a;
 }
 .diamond {
   height: 5em;
-  -webkit-filter: drop-shadow(0 0 10px rgba(117, 20, 155));
-  /* filter: drop-shadow(0 0 10px rgba(117, 20, 155)); */
-  transition: filter 0.3s ease-in-out;
-  animation: pulse 3s infinite;
+  transition: filter 0.3s ease-in-out;  
 }
 /* .diamond::after {
   filter: drop-shadow(0 0 10px rgba(117, 20, 155));
   
 } */
 .diamond:hover{
-  animation: none;
   filter: drop-shadow(0 0 20px rgba(117, 20, 155));
-
-  
 }
 .diamond_glow {
-  height: 5em;
-  /* -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5)); */
-  filter: drop-shadow(0 0 20px rgba(117, 20, 155));
+  -webkit-filter: drop-shadow(0 0 15px rgba(117, 20, 155));
+  /* filter: drop-shadow(0 0 10px rgba(117, 20, 155)); */
+  transition: filter 0.3s ease-in-out;
+  animation: pulse 3s infinite;
 }
 
 .border-right {
@@ -190,5 +194,23 @@ form div {
   }
   100% {
     filter: drop-shadow(0 0 10px rgba(117, 20, 155));
+  }
+
+}
+@keyframes pulseBig {
+  0% {
+    filter: drop-shadow(0 0 20px rgba(117, 20, 155));
+  }
+  25% {
+    filter: drop-shadow(0 0 15px rgba(117, 20, 155));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(117, 20, 155));
+  }
+  75% {
+    filter: drop-shadow(0 0 15px rgba(117, 20, 155));
+  }
+  100% {
+    filter: drop-shadow(0 0 20px rgba(117, 20, 155));
   }
 }
