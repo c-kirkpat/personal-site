@@ -1,7 +1,6 @@
 body {
   font-family: sans-serif;
   background: rgb(199, 232, 243);
-  border-radius: 15%;
 }
 
 a {
@@ -60,9 +59,10 @@ form div {
   justify-content: center;
   border-style: solid;
   border-width: .3em;
-  border-color: #50c9ce;
+  border-color: #3a405a;
   color: #72a1e5;
   border-right-width: .15em;
+  border-left: none;
   padding: .1em;
 }
 .lastNameWrapper {
@@ -77,7 +77,8 @@ form div {
   border-style: solid;
   border-width: .3em;
   border-left-width: .15em;
-  border-color: #50c9ce;
+  border-right: none;
+  border-color: #3a405a;
   color: #9883e5;
   padding: .1em;
 }
