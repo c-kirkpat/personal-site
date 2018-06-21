@@ -1,6 +1,14 @@
+@font-face{
+  font-family: Road Rage;
+  src: url(Road_Rage.otf)
+}
+@font-face{
+  font-family: Blade;
+  src: url(blade.ttf)
+}
 body {
   font-family: sans-serif;
-  background: rgb(199, 232, 243);
+  background: rgb(28,30,67);
 }
 
 a {
@@ -23,195 +31,132 @@ form div {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-auto-rows: minmax(100px, auto);
+  /* grid-template-rows: repeat(8, 1fr) */
+  grid-auto-rows: minmax(10em, auto);
   /* padding: 5em; */
   grid-template-areas:
-    "w a a a b b b x"
-    "w a a a b b b x"
-    "w c c c c c c x"
-    "w d e e e e f x"
-    "w n n n n n n x"
-    "w n n n n n n x"
-    "w n n n n n n x"
-    "w n n n n n n x"
-    "w n n n n n n x";
+    "a a a a a a a a"
+    "b b c c d d e e"
+    "g g g g g g g g"
+    "t t t t t t t t"
+    "t t t t t t t t"
   
 }
 
-/* .header {
+.dev-banner {
   grid-area: a;
-  align-self: center;
-  justify-self: center;
-  font-size: 5em;
- 
+  background: #BFE6EC;
+  color: white;
+  font-size: 7em;
+  text-align: center;
+  letter-spacing: 30px;
+  font-family: Blade;
 
-  padding: 50px;
-} */
-
-.firstNameWrapper {
-  display: grid;
-  grid-template-areas: "subA" "subB";  
-  grid-area: a;
-  grid-gap: 0px;
-  font-size: 4.5em;
-  font-weight: bold;
-  align-content: center;
-  justify-content: center;
-  border-style: solid;
-  border-width: .3em;
-  border-color: #3a405a;
-  color: #72a1e5;
-  border-right-width: .15em;
-  border-left: none;
-  padding: .1em;
 }
-.lastNameWrapper {
+.dev-text {
+  font-size: 1em;
+  background: -webkit-linear-gradient(#eee, #1c1f41);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  top: 50%;
+}
+
+.section-wrapper {
+  /* grid-area: b; */
   display: grid;
-  grid-template-areas: "subA" "subB";  
+  /* grid-template-areas: "same"; */
+  text-align: center;
+  padding: 1em;
+  align-content: center;
+}
+.about-wrapper {
   grid-area: b;
-  grid-gap: 0px;
-  font-size: 4.5em;
-  font-weight: bold;
-  align-content: center;
-  justify-content: center;
-  border-style: solid;
-  border-width: .3em;
-  border-left-width: .15em;
-  border-right: none;
-  border-color: #3a405a;
-  color: #9883e5;
-  padding: .1em;
+  grid-template-areas: "about"
 }
-.header {
-  grid-area: subA;
-  align-self: center;
-  justify-self: center;
-  
-}
-.header2 {
-  grid-area: subB;
-  align-self: center;
-  justify-self: center;
-  
-}
-
-.banner {
-  padding-top: 50px;
+.contact-wrapper {
   grid-area: c;
-  border-bottom-style: solid;
-  border-bottom-width: .4em;
-  text-align: center;
-  color: #3a405a;
-  font-size: 3em;
-  font-weight: bold;
-  letter-spacing: 50px;
+  grid-template-areas: "contact";
 }
-.lastName {
-  text-align: justify;
-  text-justify: inter-character;  
-  align-self: center;
-  justify-self: center;
+.projects-wrapper {
+  grid-area: d;
+  grid-template-areas: "projects";
 }
-
-
-/* .header2 {
-  grid-area: f;
-  align-self: center;
-  justify-self: center;
-  font-size: 5em;
-  padding: 2em;
-  border: 35px solid;
-  border-top: none;
-  padding-left: 53px;
-  padding-right: 53px;
-  
-} */
-/* .lastName {
-  grid-area: b;
-  align-self: center;
-  justify-self: center;
-  font-size: 5em
-}
-.lastName2 {
-  grid-area: g;
-  align-self: center;
-  justify-self: center;
-  font-size: 5em;
-} */
-
-/* SHAPE STUFF */
-
-.diamondWrapper {
+.demo-wrapper {
   grid-area: e;
-  display: grid;
-  grid-template-areas: 'a a a';
-  grid-gap: 10em;
-  align-content: center;
-  justify-content: center;
-  padding-top: 2em;
-  text-align: center;
-  font-weight: bold;
-  color:rgb(58, 64, 90);
-}
-.diamond {
-  height: 5em;
-  transition: filter 0.3s ease-in-out;  
-}
-/* .diamond::after {
-  filter: drop-shadow(0 0 10px rgba(117, 20, 155));
-  
-} */
-.diamond:hover{
-  filter: drop-shadow(0 0 20px rgba(117, 20, 155));
-}
-.diamond_glow {
-  -webkit-filter: drop-shadow(0 0 15px rgba(117, 20, 155));
-  /* filter: drop-shadow(0 0 10px rgba(117, 20, 155)); */
-  transition: filter 0.3s ease-in-out;
-  animation: pulse 3s infinite;
+  grid-template-areas: "demo"
 }
 
-.border-right {
-  grid-area: w;
-  background: #3a405a
+.about {
+  width: 100%;
+  font-size: 4em;
+  font-family: Road Rage;
+  grid-area: about;
+  margin-top: 4%;
+  color: red;
+  transform: rotate(-15deg)
 }
-.border-left {
-  grid-area: x;
-  background: #3a405a;
+.contact {
+  width: 100%;
+  font-size: 4em;
+  font-family: Road Rage;
+  grid-area: contact;
+  margin-top: 4%;
+  color: red;
+  transform: rotate(-15deg)
+}
+.projects {
+  width: 100%;
+  font-size: 4em;
+  font-family: Road Rage;
+  grid-area: projects;
+  margin-top: 4%;
+  color: red;
+  transform: rotate(-15deg)
+}
+.demo {
+  width: 100%;
+  font-size: 4em;
+  font-family: Road Rage;
+  grid-area: demo;
+  margin-top: 4%;
+  color: red;
+  transform: rotate(-15deg)
+}
+.triangle {
+  width: 50%;
+  justify-self: center;
+  transform: rotate(-5deg)
+}
+.about-triangle {
+  grid-area: about;
+}
+.contact-triangle {
+  grid-area: contact;
+  transform: rotate(5deg)
+}
+.projects-triangle {
+  grid-area: projects;
+  transform: rotate(-5deg)
+}
+.demo-triangle {
+  grid-area: demo;
+  transform: rotate(5deg)
 }
 
-@keyframes pulse {
-  0% {
-    filter: drop-shadow(0 0 10px rgba(117, 20, 155));
-  }
-  25% {
-    filter: drop-shadow(0 0 15px rgba(117, 20, 155));
-  }
-  50% {
-    filter: drop-shadow(0 0 10px rgba(117, 20, 155));
-  }
-  75% {
-    filter: drop-shadow(0 0 15px rgba(117, 20, 155));
-  }
-  100% {
-    filter: drop-shadow(0 0 10px rgba(117, 20, 155));
-  }
-
+.checker-board {
+  grid-area: g;
+  display:grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 4em;
+  border-style: solid;
+  border-width: .5em;
+  border-color: #BFE6EC
 }
-@keyframes pulseBig {
-  0% {
-    filter: drop-shadow(0 0 20px rgba(117, 20, 155));
-  }
-  25% {
-    filter: drop-shadow(0 0 15px rgba(117, 20, 155));
-  }
-  50% {
-    filter: drop-shadow(0 0 20px rgba(117, 20, 155));
-  }
-  75% {
-    filter: drop-shadow(0 0 15px rgba(117, 20, 155));
-  }
-  100% {
-    filter: drop-shadow(0 0 20px rgba(117, 20, 155));
-  }
+.white {
+  /* background: rgb(55, 233, 203); */
+  background: #BFE6EC
+}
+.black {
+  /* background: rgb(57, 46, 121); */
 }
