@@ -55,7 +55,7 @@ form div {
 }
 .dev-text {
   font-size: 1em;
-  background: -webkit-linear-gradient(#eee, #1c1f41);
+  background: -webkit-linear-gradient(#BFE6EC, #1c1f41);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   top: 50%;
