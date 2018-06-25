@@ -12,7 +12,7 @@ export const GridTest = () => {
     return (
         <div className='wrapper'>
             <div className='dev-banner'>
-                <div className = 'dev-text'> web developer </div>
+                <div className = 'dev-text'> software engineer </div>
             </div>
             <div className='about-wrapper section-wrapper'>
                 <img className='about-triangle triangle' src='triangle2.svg' />
@@ -20,15 +20,15 @@ export const GridTest = () => {
             </div>
             <div className='projects-wrapper section-wrapper'>
                 <img className='projects-triangle triangle' src='triangle2.svg' />
-                <div className='projects'>ABOUT</div>
+                <div className='projects'>PROJECTS</div>
             </div>
             <div className='contact-wrapper section-wrapper'>
                 <img className='contact-triangle triangle' src='triangle2.svg' />
-                <div className='contact'>ABOUT</div>
+                <div className='contact'>CONTACT</div>
             </div>
             <div className='demo-wrapper section-wrapper'>
                 <img className='demo-triangle triangle' src='triangle2.svg' />
-                <div className='demo'>ABOUT</div>
+                <div className='demo'>DEMO</div>
             </div>
             <div className='checker-board'>
                 {arr.map((elem, index, array) => {

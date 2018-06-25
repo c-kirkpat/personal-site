@@ -6,9 +6,27 @@
   font-family: Blade;
   src: url(blade.ttf)
 }
+@font-face{
+  font-family: Atarian;
+  src: url(atarian.ttf);
+}
+@font-face {
+  font-family: Outrun;
+  src: url(outrun_bold.otf);
+}
+@font-face {
+  font-family: Third Rail;
+  src: url(third-rail.ttf)
+}
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: sans-serif;
-  background: rgb(28,30,67);
+  /* background: rgb(28,30,67); */
+  background: rgb(150,0,255);
+  /* background: rgb(76,81,163); */
 }
 
 a {
@@ -29,6 +47,7 @@ form div {
   display: inline-block;
 }
 .wrapper {
+  margin-top: 0;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   /* grid-template-rows: repeat(8, 1fr) */
@@ -44,21 +63,33 @@ form div {
 }
 
 .dev-banner {
+  margin-top: 0;
+  
   grid-area: a;
-  background: #BFE6EC;
+  /* background: rgb(64,217,242); */
+  border-style: solid;
+  border-top-width: .5em;
+  border-color:rgb(64,217,242);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
   color: white;
   font-size: 7em;
   text-align: center;
   letter-spacing: 30px;
-  font-family: Blade;
+  font-family: Atarian;
 
 }
 .dev-text {
   font-size: 1em;
-  background: -webkit-linear-gradient(#BFE6EC, #1c1f41);
+  /* background: -webkit-linear-gradient(rgb(64,217,242), #e74369);   */
+  /* background: -webkit-linear-gradient(#e74369,#f9e156);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;  */
+  /* color:rgb(255,113,206); */
+  color: rgb(255,251,150);
   top: 50%;
+  /* text-shadow: 0px 0px 20px rgba(255, 113, 210, 0.664); */
 }
 
 .section-wrapper {
@@ -89,38 +120,56 @@ form div {
 .about {
   width: 100%;
   font-size: 4em;
-  font-family: Road Rage;
+  font-family: Third Rail;
   grid-area: about;
   margin-top: 4%;
-  color: red;
-  transform: rotate(-15deg)
+  /* color: #e74369; */
+  color: rgb(255,113,206);
+  transform: rotate(-15deg);
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, .8);
+  
 }
 .contact {
   width: 100%;
   font-size: 4em;
-  font-family: Road Rage;
+  font-family: Third Rail;
   grid-area: contact;
   margin-top: 4%;
-  color: red;
-  transform: rotate(-15deg)
+  /* color: #e74369; */
+  color: rgb(255,113,206);
+  
+  transform: rotate(-15deg);
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, .8);  
 }
 .projects {
   width: 100%;
   font-size: 4em;
-  font-family: Road Rage;
+  font-family: Third Rail;
   grid-area: projects;
   margin-top: 4%;
-  color: red;
-  transform: rotate(-15deg)
+  /* color: #e74369; */
+  color: rgb(255,113,206);
+  
+  transform: rotate(-15deg);
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, .8);
+  transition-property: all;
+  transition-duration: .5s;
+}
+.projects:hover{
+  transform: rotate(-15deg) translate(8px,8px);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8)
 }
 .demo {
   width: 100%;
   font-size: 4em;
-  font-family: Road Rage;
+  font-family: Third Rail;
   grid-area: demo;
   margin-top: 4%;
-  color: red;
-  transform: rotate(-15deg)
+  /* color: #e74369; */
+  color: rgb(255,113,206);
+  
+  transform: rotate(-15deg);
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, .8);  
 }
 .triangle {
   width: 50%;
@@ -151,12 +200,21 @@ form div {
   height: 4em;
   border-style: solid;
   border-width: .5em;
-  border-color: #BFE6EC
+  border-color: rgb(64,217,242)
 }
 .white {
   /* background: rgb(55, 233, 203); */
-  background: #BFE6EC
+  background: rgb(64,217,242)
 }
 .black {
   /* background: rgb(57, 46, 121); */
+}
+#p5 {
+  margin-bottom: 0;
+  padding-bottom:0;
+  height: calc(100vh * .5)  
+}
+#defaultCanvas0 {
+  margin-bottom: 0;
+  padding-bottom:0;
 }
